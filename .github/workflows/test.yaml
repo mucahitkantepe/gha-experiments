@@ -2,11 +2,7 @@ name: test
 
 on:
   workflow_dispatch:
-    inputs:
-      name:
-        description: 'Name to greet'
-        required: true
-        default: 'World'
+
 
 jobs:
   greet:
@@ -14,4 +10,6 @@ jobs:
     
     steps:
     - name: Greet
-      run: which ffmpeg
+      run: mkdir test-1
+    - name: Greetings
+      run: cd test-1 
