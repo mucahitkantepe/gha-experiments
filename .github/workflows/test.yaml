@@ -10,8 +10,8 @@ on:
 
 jobs:
   greet:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     
     steps:
     - name: Greet
-      run: echo "Hello, ${{ github.event.inputs.name }}!"
+      run: which ffmpeg
